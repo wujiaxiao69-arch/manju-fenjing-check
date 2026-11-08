@@ -55,7 +55,7 @@ The plugin is an ordinary npm-shaped package with a `dsh.bundle` declaration.
 dsh plugin --profile web add link:/absolute/path/to/manju-fenjing-check
 
 # or from a git source, once published
-dsh plugin --profile web add "github:wujiaxiaog-arch/manju-fenjing-check#main"
+dsh plugin --profile web add "github:wujiaxiao69-arch/manju-fenjing-check#main"
 ```
 
 Restart `dsh web` after installing a bundle, then confirm the mount:
