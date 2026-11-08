@@ -1,0 +1,51 @@
+{
+  "name": "dsh-manju-fenjing-check",
+  "version": "0.1.0",
+  "description": "Storyboard quality checker for AI short-form drama: face drift, timing collapse, freeze-frame breaks and sensitive terms, graded into a MUST FIX / SUGGESTED / PASS report.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./rules": "./rules.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "rules.js",
+    "run-tests.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "RULES.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "storyboard",
+    "shot-list",
+    "ai-video",
+    "short-drama",
+    "prompt-engineering",
+    "linter",
+    "quality-assurance"
+  ],
+  "author": "wujiaxiaog-arch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wujiaxiaog-arch/manju-fenjing-check.git"
+  }
+}
